@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style type="text/css">
+		img{
+			width: 100px;
+			position: absolute;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div style="background-image: url(game.png); height: 1000px; background-size: 100% 100%">
+
+		<!--цветы 1 ряд-->
+		<img class="flower" src="sunflower.png"  style=" margin-left: 33%; margin-top: 13%;">
+		<img class="flower" src="sunflower.png"  style=" margin-left: 33%; margin-top: 19%;">
+		<img class="flower" src="sunflower.png"  style=" margin-left: 33%; margin-top: 25%;">
+		<img class="flower" src="sunflower.png"  style=" margin-left: 33%; margin-top: 31%;">
+		<img class="flower" src="sunflower.png"  style=" margin-left: 33%; margin-top: 37%;">
+		<button class="flower_btn" style="color: red; font-weight: bold; position: absolute; margin-left: 33%; margin-top: 17%; ">PLANT</button>	
+		<button class="flower_btn" style="color: red; font-weight: bold; position: absolute; margin-left: 33%; margin-top: 23%; ">PLANT</button>
+		<button class="flower_btn" style="color: red; font-weight: bold; position: absolute; margin-left: 33%; margin-top: 29%; ">PLANT</button>
+		<button class="flower_btn" style="color: red; font-weight: bold; position: absolute;  margin-left: 33%; margin-top: 35%; ">PLANT</button>
+		<button class="flower_btn" style="color: red; font-weight: bold; position: absolute; margin-left: 33%; margin-top: 41%; ">PLANT</button>
+
+		<!--цветы 2 ряд-->
+		<img class="flower" src="sunflower.png"  style=" margin-left: 40%; margin-top: 13%; ">
+		<img class="flower" src="sunflower.png"  style=" margin-left: 40%; margin-top: 19%; ">
+		<img class="flower" src="sunflower.png"  style=" margin-left: 40%; margin-top: 25%; ">
+		<img class="flower" src="sunflower.png"  style=" margin-left: 40%; margin-top: 31%; ">
+		<img class="flower" src="sunflower.png"  style=" margin-left: 40%; margin-top: 37%; ">
+		<button class="flower_btn" style="color: green; font-weight: bold; position: absolute; margin-left: 40%; margin-top: 17%; ">PLANT</button>	
+		<button class="flower_btn" style="color: green; font-weight: bold; position: absolute; margin-left: 40%; margin-top: 23%; ">PLANT</button>
+		<button class="flower_btn" style="color: green; font-weight: bold; position: absolute; margin-left: 40%; margin-top: 29%; ">PLANT</button>
+		<button class="flower_btn" style="color: green; font-weight: bold; position: absolute;  margin-left: 40%; margin-top: 35%; ">PLANT</button>
+		<button class="flower_btn" style="color: green; font-weight: bold; position: absolute; margin-left: 40%; margin-top: 41%; ">PLANT</button>
+
+
+		<button class="btn btn-warning grow" style="margin-left: 20%; margin-top: 5%;">Увеличить цветы</button>
+		<button class="btn btn-success grow" style="margin-top: 5%;">Увеличить цветы</button>
+	</div>
+
+<script>
+	let num = 5;
+	let btn = document.querySelectorAll(".grow");
+	let img = document.querySelectorAll(".flower");
+	let box = document.querySelectorAll(".flower_btn");
+	box[0].onclick = function(){
+		img[0].style.display = "block"
+		box[0].style.display = "none"
+	}
+	box[1].onclick = function(){
+		img[1].style.display = "block"
+		box[1].style.display = "none"
+	}
+	box[2].onclick = function(){
+		img[2].style.display = "block"
+		box[2].style.display = "none"
+	}
+	box[3].onclick = function(){
+		img[3].style.display = "block"
+		box[3].style.display = "none"
+	}
+	box[4].onclick = function(){
+		img[4].style.display = "block"
+		box[4].style.display = "none"
+	}
+	box[5].onclick = function(){
+		img[5].style.display = "block"
+		box[5].style.display = "none"
+	}
+	box[6].onclick = function(){
+		img[6].style.display = "block"
+		box[6].style.display = "none"
+	}
+	box[7].onclick = function(){
+		img[7].style.display = "block"
+		box[7].style.display = "none"
+	}
+	box[8].onclick = function(){
+		img[8].style.display = "block"
+		box[8].style.display = "none"
+	}
+	box[9].onclick = function(){
+		img[9].style.display = "block"
+		box[9].style.display = "none"
+	}
+	btn[0].onclick = function(){
+		img[0].style.height = "150px";
+		img[0].style.width = "150px";
+		img[1].style.height = "150px";
+		img[1].style.width = "150px";
+		img[2].style.height = "150px";
+		img[2].style.width = "150px";
+		img[3].style.height = "150px";
+		img[3].style.width = "150px";
+		img[4].style.height = "150px";
+		img[4].style.width = "150px";
+
+	}
+	btn[1].onclick = function(){
+		img[num].style.height = "150px";
+		img[num].style.width = "150px";
+		num = num + 1;
+	}
+</script>
+</body>
+</html>
